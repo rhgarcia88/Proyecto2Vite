@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/png" href="./assets/logo.png" />
+    <title>Terrarios Tiendanimal</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div id="first-header">
+          <label for="btn-menu">
+          <span class="material-symbols-outlined burger-menu">
+            menu
+            </span>
+          </label>
+        <div class="logo-div">  <img src="https://www.tiendanimal.es/on/demandware.static/Sites-TiendanimalES-Site/-/default/dwd403d0fa/images/logo/logotiendanimal.svg" alt="Logo TiendaAnimal"></img></div>
+          <div id="search-box">
+            <!-- Barra de busqueda -->
+            <input type="text" placeholder="Busca entre más de 40.000 productos">
+            <button><span class="material-symbols-outlined">
+              search
+              </span></button>
+            </div>
+              <div class="right-icons">
+               <div> <span class="material-symbols-outlined google-icon">
+                  shopping_cart
+                  </span>
+                  <h4>Carrito</h4>
+                </div>
+                <div>
+                  <span class="material-symbols-outlined google-icon">
+                    person
+                    </span>
+                    <h4>Usuario</h4>
+                  </div>
+              </div>
+      
+          
+        </div>
+        <nav id="second-header">
+          <ul class="nav-ul">
+            <li>
+              <a href="#">PERROS</a>
+            </li>
+            <li>
+              <a href="#">GATOS</a>
+            </li>
+            <li>
+              <a href="#">OTROS ANIMALES</a>
+            </li>
+            <li>
+              <a href="#">MARCAS TOP</a>
+            </li>
+            <li>
+              <a href="#">OFERTAS</a>
+            </li>
+          </ul>
+        </nav>
+        <input type="checkbox" id="btn-menu" style="display: none;"/>
+<div id="lateral-nav-container">
+<div id="cont-menu">
+  <label for="btn-menu">
+  <span class="material-symbols-outlined close-lateral">
+    close
+    </span>
+  </label>
+  <ul id="lateral-ul">
+    <li>
+      <a href="#">PERROS</a>
+    </li>
+    <li>
+      <a href="#">GATOS</a>
+    </li>
+    <li>
+      <a href="#">OTROS ANIMALES</a>
+    </li>
+    <li>
+      <a href="#">MARCAS TOP</a>
+    </li>
+    <li>
+      <a href="#">OFERTAS</a>
+    </li>
+  </ul>
+</div>
+</div>
+        
+      </header>
+      <main>        
+        <h1>Terrarios</h1>
+        <div id="sections-container">
+        <section class="filter">
+          <h2>Filtros</h2>
+          <div id="selled-by">
+            <h3>Vendido por:</h3>
+            <select name="sellerList" id="sellers-select">
+              <option value="none" selected>Todos</option>
+            </select>
+          </div>
+          <div id="price">
+            <h3>Precio menor de:</h3>
+            <input type="number" min="0" id="price-field" numeric><button id="price-button">Buscar</button>
+          </div>
+         <button id="clean-filters">
+          Limpiar Filtros
+         </button>
+
+        </section>
+        <section class="products">
+          <ul id="product-list">
+           
+          </ul>
+        </section>
+      </div>
+      </main>
+
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
